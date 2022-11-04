@@ -4,17 +4,34 @@
   "description": "Personal Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	  "dev": "next dev -H 0.0.0.0",
+	  "build": "next build",
+	  "prettier": "prettier -write .",
+	  "lint": "next lint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adnene-guessoum/site_perso.git"
+    "url": "git+https://github.com/adnene-guessoum/Owling-dev.git"
   },
   "keywords": [],
-  "author": "Guessoum Adnene",
+  "author": "Guessoum Adnene <adnen.guessoum@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/adnene-guessoum/site_perso/issues"
+    "url": "https://github.com/adnene-guessoum/Owling-dev/issues"
   },
-  "homepage": "https://github.com/adnene-guessoum/site_perso#readme"
+  "homepage": "https://github.com/adnene-guessoum/Owling-dev#readme",
+  "dependencies": {
+    "@chakra-ui/react": "^2.3.7",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^7.6.4",
+    "next": "^13.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-next": "^13.0.2",
+    "prettier": "^2.7.1"
+  }
 }
