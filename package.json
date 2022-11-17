@@ -4,10 +4,10 @@
   "description": "Personal Website",
   "main": "index.js",
   "scripts": {
-	  "dev": "next dev -H 0.0.0.0",
-	  "build": "next build",
-	  "prettier": "prettier -write .",
-	  "lint": "next lint"
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/adnene-guessoum/Owling-dev#readme",
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.12",
     "@chakra-ui/react": "^2.3.7",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
