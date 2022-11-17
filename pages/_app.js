@@ -12,6 +12,9 @@ import Layout from '../components/layouts/main'
 // compatibilité chakra mode nuit
 import theme from '../libs/theme'
 
+// fonts google API
+import Fonts from '../components/fonts' 
+
 const SiteWeb = ({ Component, pageProps, router }) => {
 				// prop component réfère à la page active
 				// naviguer sur les routes change la page active
@@ -19,6 +22,7 @@ const SiteWeb = ({ Component, pageProps, router }) => {
 				
 	return (
 		<ChakraProvider theme={theme}>
+			<Fonts />
 			<Layout router={router}>
 			<Component {...pageProps} key={router.route}/>
 			</Layout>
