@@ -17,26 +17,24 @@ const LogoBox = styled.span`
 	padding: 10px;
 
 	&:hover img {
-		transform: rotate(20deg);
+		transform: rotate(-20deg);
 	}
 `
 
 const Logo = () => {
-	const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
+	const owlImg = `/images/owl-logo${useColorModeValue('', '-dark')}.png`
 
 	return (
 
-		<Link href="/">
+		<Link legacyBehavior href="/">
 		<a>
 		<LogoBox>
-			<Image src={footPrintImg} width={20} height={20} alt="logo"/>
+			<Image src={owlImg} width={20} height={20} alt="logo"/>
 			<Text
 			color={useColorModeValue('gray.800', 'whiteAlpha.900')}
 			fontFamily='M PLUS Rounded 1c'
 			fontWeight="bold"
-			ml={3}>
-			Adnene Guessoum
-			</Text>
+			ml={3}>Adnene Guessoum</Text>
 		</LogoBox>
 		</a>
 		</Link>
