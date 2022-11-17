@@ -18,8 +18,8 @@ const Page = () => {
 		Adnene Guessoum
 		</Heading>
 
-		<p>Owling dev (Développeur / Data Scientist / Lecteur passionée
-			et joueur assidue)</p>
+		<p>Owling dev ( Développeur / Data Scientist / Lecteur passionée
+			et joueur assidue )</p>
 
 		</Box>
 

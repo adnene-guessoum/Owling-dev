@@ -20,6 +20,8 @@ import {
 // commonly used interface icon provided by chakra-ui
 import { HamburgerIcon } from '@chakra-ui/icons'
 
+import ThemeToggleButton from './theme-toggle'
+
 const LinkItem = ({ href, path, children}) => {
 	const active = path === href
 	const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
@@ -78,6 +80,8 @@ const Navbar = props => {
 		</Stack>
 
 		<Box flex={1} align="right">
+
+		<ThemeToggleButton />
 		<Box ml={2} display={{base:'inline-block' , md:'none'}}>
 		<Menu>
 		<MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline"

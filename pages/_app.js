@@ -9,13 +9,16 @@ import { ChakraProvider } from '@chakra-ui/react'
 // importer nos composants
 import Layout from '../components/layouts/main'
 
+// compatibilité chakra mode nuit
+import theme from '../libs/theme'
+
 const SiteWeb = ({ Component, pageProps, router }) => {
 				// prop component réfère à la page active
 				// naviguer sur les routes change la page active
 				// toute prop envoyé à component est reçu par la page active
 				
 	return (
-		<ChakraProvider>
+		<ChakraProvider theme={theme}>
 			<Layout router={router}>
 			<Component {...pageProps} key={router.route}/>
 			</Layout>
