@@ -10,17 +10,17 @@ import { Box, Container } from '@chakra-ui/react'
 
 const Main = ({children, router}) => {
 	return (
-		// main box avec padding-bottom
 		<Box as="main" pb = {8}>
+		{/* main box avec padding-bottom */}
 			<Head>
-				// viewport basique tenant compte des écrans smartphone
+		{/* viewport basique tenant compte des écrans smartphone */}
 				<meta name="viewport" content="width=device-width, initial-scale=1"/>
 				<title>Adnene Guessoum - Accueil</title>
 			</Head>
 
 			<Navbar path={router.asPath}/>
 
-				// width max taille medium (props du composant) + padding-top
+		{/* width max taille medium (props du composant) + padding-top */}
 				<Container maxW="container.md" pt={14}>
 					{children}
 				</Container>

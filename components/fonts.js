@@ -1,5 +1,5 @@
 // changer les fonts pour rire un peu
-import { Global, css } from '@emotion/react'
+import { Global } from '@emotion/react'
 
 const Fonts = () => (
 	<Global
