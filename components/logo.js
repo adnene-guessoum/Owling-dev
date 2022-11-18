@@ -26,7 +26,7 @@ const Logo = () => {
 
   return (
     <Link legacyBehavior href="/">
-      <a>
+		{/* <a>*/}
         <LogoBox>
           <Image src={owlImg} width={20} height={20} alt="logo" />
           <Text
@@ -38,7 +38,7 @@ const Logo = () => {
             Adnene Guessoum
           </Text>
         </LogoBox>
-      </a>
+		{/* </a>*/}
     </Link>
   );
 };
