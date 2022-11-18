@@ -1,0 +1,15 @@
+name: Linting for personal website CI
+on: [push, pull_request]
+
+jobs:
+  lint:
+    name: Check the source code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install packages
+        run: npm ci
+      - name: Prettier
+        run: npm run prettier
+      - name: Lint
+        run: npm run lint
