@@ -26,6 +26,7 @@ const Projets = () => {
           </ProjetGridItem>
         </Section>
 
+        <Section>
         <ProjetGridItem
           id="dashboard"
           title="Dashboard Streamlit"
@@ -34,6 +35,9 @@ const Projets = () => {
           Dashboard prédiction risque de défaut sur crédit (modèle XGboost).
           Dashboard déployé sur Streamlit share, API Flask sur Heroku.
         </ProjetGridItem>
+
+        </Section>
+
       </SimpleGrid>
     </Container>
   );
