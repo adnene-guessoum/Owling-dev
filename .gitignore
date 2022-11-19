@@ -1,6 +1,9 @@
 #environment
 .env
 
+#images
+public/
+
 # Logs
 logs
 *.log

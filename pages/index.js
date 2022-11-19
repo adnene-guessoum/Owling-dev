@@ -65,7 +65,7 @@ const Page = () => {
         </Heading>
         <Paragraph>Je suis un développeur Python et Javascript, orienté full-stack, ayant découvert les joies du code lors de ma formation en data science. Je me lance donc désormais dans toutes sortes de projets impliquant de construire des produits et des services digitaux (applications web, sites internets, tableau de bords pour analyse de données, et autres joyeuseries). Sur ce site, Je compte montrer un peu ce que je sais faire et ce sur quoi je travaille selon mes envies du moment.</Paragraph>
 		<Box align="center" my={3}>
-		<NextLink href="/works">
+		<NextLink href="/projets">
 		<Button rightIcon={< ChevronRightIcon />} colorScheme="teal" >
 		Portfolio
 		</Button>
@@ -87,7 +87,7 @@ const Page = () => {
 
 		<Paragraph>
 		- Jeux Vidéos : quand je trouve un peu de temps, j&apos;aime 
-	m&apos;arracher les cheveux sur les boss des jeux FromSoftware.
+	m&apos;arracher les cheveux qui me restent sur les boss des jeux FromSoftware.
 		</Paragraph>
 
 		<Paragraph>

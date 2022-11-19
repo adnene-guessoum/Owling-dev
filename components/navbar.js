@@ -73,12 +73,12 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, nmd: 0 }}
         >
-          <LinkItem href="/works" path={path}>
-            Works
+          <LinkItem href="/projets" path={path}>
+            Projets
           </LinkItem>
 
-          <LinkItem href="/posts" path={path}>
-            Posts
+          <LinkItem href="/publications" path={path}>
+            Publications
           </LinkItem>
         </Stack>
 
@@ -103,17 +103,18 @@ const Navbar = props => {
 		 hydration issue: cf. https://github.com/chakra-ui/chakra-ui/issues/2248
 	+ isLazy Menu
 */}
-              <NextLink href="/" LegacyBehavior passHref>
-                <MenuItem as={Link}>About</MenuItem>
+              <NextLink href="/projets" LegacyBehavior passHref>
+                <MenuItem as={Link}>Projets</MenuItem>
               </NextLink>
 
-              <NextLink href="/works" LegacyBehavior passHref>
-                <MenuItem as={Link}>Works</MenuItem>
+              <NextLink href="/publications" LegacyBehavior passHref>
+                <MenuItem as={Link}>Publications</MenuItem>
               </NextLink>
 
-              <NextLink href="/posts" LegacyBehavior passHref>
-                <MenuItem as={Link}>Posts</MenuItem>
+							<NextLink href="/" LegacyBehavior passHref>
+                <MenuItem as={Link}>A propos</MenuItem>
               </NextLink>
+
 
               <MenuItem
                 as={Link}
