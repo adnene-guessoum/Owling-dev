@@ -111,10 +111,9 @@ const Navbar = props => {
                 <MenuItem as={Link}>Publications</MenuItem>
               </NextLink>
 
-							<NextLink href="/" LegacyBehavior passHref>
+              <NextLink href="/" LegacyBehavior passHref>
                 <MenuItem as={Link}>A propos</MenuItem>
               </NextLink>
-
 
               <MenuItem
                 as={Link}
