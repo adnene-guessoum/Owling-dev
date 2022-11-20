@@ -10,6 +10,8 @@ import {
 
 import { ChevronRightIcon } from '@chakra-ui/icons';
 
+import Layout from '../components/layouts/article';
+
 import Section from '../components/section';
 
 import Paragraph from '../components/paragraph';
@@ -18,6 +20,7 @@ import { BioSection, BioYear } from '../components/bio';
 
 const Page = () => {
   return (
+		<Layout>
     <Container>
       <Box
         borderRadius="md"
@@ -140,6 +143,7 @@ const Page = () => {
         </BioSection>
       </Section>
     </Container>
+		</Layout>
   );
 };
 

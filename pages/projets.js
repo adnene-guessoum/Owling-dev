@@ -1,6 +1,7 @@
 // construire la page de présentation des différents projets
 import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react';
 import Section from '../components/section';
+import Layout from '../components/layouts/article'
 import { ProjetGridItem } from '../components/grid-item';
 
 import thumbStar from '../public/images/projets/thumbnail_gh_cli.png';
@@ -8,6 +9,7 @@ import thumbDash from '../public/images/projets/thumbnail_dash.png';
 
 const Projets = () => {
   return (
+		<Layout>
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
         Projets
@@ -40,6 +42,7 @@ const Projets = () => {
 
       </SimpleGrid>
     </Container>
+		</Layout>
   );
 };
 
