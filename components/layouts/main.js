@@ -4,6 +4,9 @@ import Head from 'next/head';
 // importer notre barre de navigation
 import Navbar from '../navbar.js';
 
+// desactiver server side rendering pour voxel
+import NoSsr from '../no-ssr';
+
 // Box pour page d'accueil et Container pour cotrôler largeur d'un contenu
 // cf composants chakra-ui
 import { Box, Container } from '@chakra-ui/react';
@@ -25,7 +28,9 @@ const Main = ({ children, router }) => {
 
       {/* width max taille medium (props du composant) + padding-top */}
       <Container maxW="container.md" pt={14}>
-        <VoxelOwl />
+        <NoSsr>
+          <VoxelOwl />
+        </NoSsr>
         {children}
       </Container>
     </Box>
