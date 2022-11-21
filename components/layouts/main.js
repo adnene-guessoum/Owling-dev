@@ -8,6 +8,9 @@ import Navbar from '../navbar.js';
 // cf composants chakra-ui
 import { Box, Container } from '@chakra-ui/react';
 
+// import notre voxel
+import VoxelOwl from '../voxel-owl';
+
 const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
@@ -22,6 +25,7 @@ const Main = ({ children, router }) => {
 
       {/* width max taille medium (props du composant) + padding-top */}
       <Container maxW="container.md" pt={14}>
+        <VoxelOwl />
         {children}
       </Container>
     </Box>

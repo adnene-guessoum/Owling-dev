@@ -15,7 +15,7 @@ import theme from '../libs/theme';
 import Fonts from '../components/fonts';
 
 // transition animée entre les pages
-import { AnimatePresence } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion';
 
 const SiteWeb = ({ Component, pageProps, router }) => {
   // prop component réfère à la page active
@@ -27,9 +27,9 @@ const SiteWeb = ({ Component, pageProps, router }) => {
       <Fonts />
 
       <Layout router={router}>
-		<AnimatePresence mode='wait' initial={true}>
-        <Component {...pageProps} key={router.route} />
-		</AnimatePresence>
+        <AnimatePresence mode="wait" initial={true}>
+          <Component {...pageProps} key={router.route} />
+        </AnimatePresence>
       </Layout>
     </ChakraProvider>
   );
