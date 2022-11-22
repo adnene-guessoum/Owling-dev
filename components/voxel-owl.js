@@ -66,7 +66,7 @@ const VoxelOwl = () => {
       controls.target = target;
       setControls(controls);
 
-      loadGLTFModel(scene, '/owl-room-res.glb', {
+      loadGLTFModel(scene, '/owl-baked.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
