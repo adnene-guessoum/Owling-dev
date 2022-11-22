@@ -11,10 +11,11 @@ function easeOutCirc(x) {
 
 const VoxelOwl = () => {
   const refContainer = useRef();
-	const refRenderer = useRef();
   const [loading, setLoading] = useState(true);
+	const refRenderer = useRef()
   const [renderer, setRenderer] = useState();
   const [_camera, setCamera] = useState();
+	{/*
   const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0));
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
@@ -25,6 +26,7 @@ const VoxelOwl = () => {
   );
 
   const [scene] = useState(new THREE.Scene());
+	*/}
   const [_controls, setControls] = useState();
 
   const handleWindowResize = useCallback(() => {
@@ -53,7 +55,16 @@ const VoxelOwl = () => {
       renderer.setSize(scW, scH);
       renderer.outputEncoding = THREE.sRGBEncoding;
       container.appendChild(renderer.domElement);
-      setRenderer(renderer);
+			{/*setRenderer(renderer);*/}
+			refRenderer.current = renderer
+			const scene = new THREE.Scene()
+
+			const target = new THREE.Vector3(-0.5, 1.2, 0)
+      const initialCameraPosition = new THREE.Vector3(
+        20 * Math.sin(0.2 * Math.PI),
+        10,
+        20 * Math.cos(0.2 * Math.PI)
+      )
 
       // 640 -> 240
       // 8 -> 6
@@ -125,6 +136,7 @@ const VoxelOwl = () => {
   }, [handleWindowResize]);
 
   return (
+
     <Box
       ref={refContainer}
       className="voxel-owl"
@@ -135,6 +147,7 @@ const VoxelOwl = () => {
       h={[280, 480, 640]}
       position="relative"
     >
+		{/*
       {loading && (
         <Spinner
           size="xl"
@@ -145,6 +158,7 @@ const VoxelOwl = () => {
           mt="calc(0px - var(--spinner-size))"
         />
       )}
+			*/}
     </Box>
   );
 };
