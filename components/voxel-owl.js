@@ -11,6 +11,7 @@ function easeOutCirc(x) {
 
 const VoxelOwl = () => {
   const refContainer = useRef();
+	const refRenderer = useRef();
   const [loading, setLoading] = useState(true);
   const [renderer, setRenderer] = useState();
   const [_camera, setCamera] = useState();
@@ -27,6 +28,7 @@ const VoxelOwl = () => {
   const [_controls, setControls] = useState();
 
   const handleWindowResize = useCallback(() => {
+		const { current: renderer } = refRenderer
     const { current: container } = refContainer;
     if (container && renderer) {
       const scW = container.clientWidth;
@@ -34,7 +36,7 @@ const VoxelOwl = () => {
 
       renderer.setSize(scW, scH);
     }
-  }, [renderer]);
+  }, []);
 
   /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
@@ -120,7 +122,7 @@ const VoxelOwl = () => {
     return () => {
       window.removeEventListener('resize', handleWindowResize, false);
     };
-  }, [renderer, handleWindowResize]);
+  }, [handleWindowResize]);
 
   return (
     <Box
