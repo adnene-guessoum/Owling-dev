@@ -23,7 +23,8 @@ import { GridItem } from '../components/grid-item'
 import {
 	IoLogoTwitter,
 	IoLogoGithub,
-	IoLogoDiscord
+	IoLogoDiscord,
+	IoMailOutline
 } from 'react-icons/io5'
 
 
@@ -96,32 +97,27 @@ const Page = () => {
 
 		<Section delay={0.2}>
 		<Heading as="h3" variant="section-title">
-		Mes Centres d&apos;intérêts
+		Technologies de prédilection:
 		</Heading>
-		<Paragraph mb={18}>
-		- Lire, Ecrire et Compter : Philosophie, Sciences humaines et
-		sociales, Economie et essais politiques principalement, mais je suis
-		pas contre un peu de littérature et de poésie de temps en temps.
-		(N&apos;hésitez pas à venir faire un tour sur mon tout nouveau blog
-			Django pour en parler!)
-		</Paragraph>
-
 		<Paragraph>
-		- Jeux Vidéos : quand je trouve un peu de temps, j&apos;aime
-		m&apos;arracher les cheveux qui me restent sur les boss des jeux
-		FromSoftware.
+		Je suis surtout habitué à Python et Javascript. Mon but est systématiquement
+		de progresser en conduisant les projets de bout-en-bout jusqu&apos;au déploiement
+		et en respectant les meilleurs pratiques de dévelopement dont j&apos;ai connaissance.		Chaque projet est ainsi l&apos;occasion pour moi d&apos;intégrer une technologie nouvelle	ou un outils nouveau à mon workflow. Prochain en lice: Développer un blog Django
+		en utilisant Docker.
 		</Paragraph>
+	  </Section>	
 
-		<Paragraph>
-		- Eternel étudiants de langues étrangères et de guitare : Je ne suis
-		pas du tout doué mais l&apos;espoir fait vivre :).
-		</Paragraph>
-		</Section>
+
 
 		<Section delay={0.3}>
 		<Heading as="h3" variant="section-title">
-		Réseaux sociaux
+		Contacts et Réseaux sociaux
 		</Heading>
+		<Paragraph>
+		Vous cherchez à embaucher un dévelopeur junior ou un data scientist? Vous
+		recherchez un freelance pour des missions spécifiques ?
+		Parlons-en ! N&apos;hésitez pas à me contacter :
+		</Paragraph>
 		<List>
 
 		<ListItem>
@@ -147,6 +143,17 @@ const Page = () => {
 		</ListItem>
 
 		<ListItem>
+		<Link href="mailto:adnen.guessoum@gmail.com" target="_blank">
+		<Button
+		variant="ghost"
+		colorScheme="teal"
+		leftIcon={<Icon as={IoMailOutline} />}>
+		adnen.guessoum@gmail.com
+		</Button>
+		</Link>
+		</ListItem>
+
+		<ListItem>
 		<Link href="https://discordapp.com/users/738598257659346964" target="_blank">
 		<Button
 		variant="ghost"
@@ -160,7 +167,33 @@ const Page = () => {
 		</Section>
 
 
+
 		<Section delay={0.4}>
+		<Heading as="h3" variant="section-title">
+		Mes Centres d&apos;intérêts
+		</Heading>
+		<Paragraph mb={18}>
+		- Lire, Ecrire et Compter : Philosophie, Sciences humaines et
+		sociales, Economie et essais politiques principalement, mais je suis
+		pas contre un peu de littérature et de poésie de temps en temps.
+		(N&apos;hésitez pas à venir faire un tour sur mon tout nouveau blog
+			Django pour en parler!)
+		</Paragraph>
+
+		<Paragraph>
+		- Jeux Vidéos : quand je trouve un peu de temps, j&apos;aime
+		m&apos;arracher les cheveux qui me restent sur les boss des jeux
+		FromSoftware.
+		</Paragraph>
+
+		<Paragraph>
+		- Eternel étudiants de langues étrangères et de guitare : Je ne suis
+		pas du tout doué mais l&apos;espoir fait vivre :).
+		</Paragraph>
+		</Section>
+
+
+		<Section delay={0.5}>
 		<Heading as="h3" variant="section-title">
 		Ma Formation
 		</Heading>

@@ -7,10 +7,12 @@ import { mode } from '@chakra-ui/theme-tools';
 const styles = {
   global: props => ({
     body: {
-      bg: mode('#f0e7db', '#202023')(props)
+      bg: mode('#d5cdc4', '#333')(props)
     }
   })
 };
+
+// base-theme #f0e7db #202023
 
 const components = {
   Heading: {
@@ -35,8 +37,10 @@ const components = {
 };
 
 const fonts = {
-  heading: "'M PLUS Rounded 1c'"
+  heading:"'M PLUS Rounded 1c'"
 };
+
+//base-fonts:
 
 const colors = {
   glassTeal: '#88ccca'

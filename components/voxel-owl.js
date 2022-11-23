@@ -126,7 +126,8 @@ const VoxelOwl = () => {
       ref={refContainer}
       className="voxel-owl"
 			m="auto"
-      mb={['-10px', '-100px', '-200px']}
+			mt={['-20px', '-100px', '-100px']}
+      mb={['-10px', '-150px', '-150px']}
       w={[280, 480, 640]}
       h={[280, 480, 640]}
       position="relative"
