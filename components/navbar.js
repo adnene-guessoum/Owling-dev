@@ -17,8 +17,11 @@ import {
   useColorModeValue
 } from '@chakra-ui/react';
 
+
 // commonly used interface icon provided by chakra-ui
 import { HamburgerIcon } from '@chakra-ui/icons';
+
+import { IoLogoGithub } from 'react-icons/io5'
 
 import ThemeToggleButton from './theme-toggle';
 
@@ -74,12 +77,29 @@ const Navbar = props => {
           mt={{ base: 4, nmd: 0 }}
         >
           <LinkItem href="/projets" path={path}>
-            Projets
-          </LinkItem>
+						Portfolio
+					</LinkItem>
 
           <LinkItem href="/publications" path={path}>
             Publications
           </LinkItem>
+
+					<LinkItem href="/tech" path={path}>
+            Outils
+          </LinkItem>
+
+					<LinkItem
+						href="https://github.com/adnene-guessoum/Owling-dev"
+						path={path}
+						display="inline-flex"
+						alignItems="center"
+						style={{gap: 4}}
+						pl={2}
+					>
+					<IoLogoGithub />
+					Source
+					</LinkItem>
+
         </Stack>
 
 
@@ -102,28 +122,35 @@ const Navbar = props => {
             />
 
             <MenuList>
+
               {/*
-		 hydration issue: cf. https://github.com/chakra-ui/chakra-ui/issues/2248
-	+ isLazy Menu
-*/}
+		 					hydration issue: 
+							cf. https://github.com/chakra-ui/chakra-ui/issues/2248
+							+ isLazy Menu
+							*/}
+
+							<NextLink href="/" LegacyBehavior passHref>
+                <MenuItem as={Link}>Accueil</MenuItem>
+              </NextLink>
+
+
               <NextLink href="/projets" LegacyBehavior passHref>
-                <MenuItem as={Link}>Projets</MenuItem>
+                <MenuItem as={Link}>Portfolio</MenuItem>
               </NextLink>
 
               <NextLink href="/publications" LegacyBehavior passHref>
                 <MenuItem as={Link}>Publications</MenuItem>
               </NextLink>
 
-              <NextLink href="/" LegacyBehavior passHref>
-                <MenuItem as={Link}>A propos</MenuItem>
+							<NextLink href="/tech" LegacyBehavior passHref>
+                <MenuItem as={Link}>Outils</MenuItem>
               </NextLink>
 
               <MenuItem
                 as={Link}
                 href="https://github.com/adnene-guessoum/Owling-dev"
-              >
-                View Source
-              </MenuItem>
+              >Code Source</MenuItem>
+
             </MenuList>
           </Menu>
         </Box>

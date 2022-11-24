@@ -105,8 +105,16 @@ const Page = () => {
 		et en respectant les meilleurs pratiques de dévelopement dont j&apos;ai connaissance.		Chaque projet est ainsi l&apos;occasion pour moi d&apos;intégrer une technologie nouvelle	ou un outils nouveau à mon workflow. Prochain en lice: Développer un blog Django
 		en utilisant Docker.
 		</Paragraph>
-	  </Section>	
 
+		<Box align="center" my={3}>
+		<NextLink href="/tech">
+		<Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+		Outils 
+		</Button>
+		</NextLink>
+		</Box>
+
+	  </Section>	
 
 
 		<Section delay={0.3}>
@@ -114,7 +122,7 @@ const Page = () => {
 		Contacts et Réseaux sociaux
 		</Heading>
 		<Paragraph>
-		Vous cherchez à embaucher un dévelopeur junior ou un data scientist? Vous
+		Vous cherchez à embaucher un dévelopeur junior ou un data scientist ? Vous
 		recherchez un freelance pour des missions spécifiques ?
 		Parlons-en ! N&apos;hésitez pas à me contacter :
 		</Paragraph>
@@ -174,16 +182,16 @@ const Page = () => {
 		</Heading>
 		<Paragraph mb={18}>
 		- Lire, Ecrire et Compter : Philosophie, Sciences humaines et
-		sociales, Economie et essais politiques principalement, mais je suis
+		sociales, Economie et essais politiques principalement. Mais je ne suis
 		pas contre un peu de littérature et de poésie de temps en temps.
 		(N&apos;hésitez pas à venir faire un tour sur mon tout nouveau blog
-			Django pour en parler!)
+			Django pour en parler ! )
 		</Paragraph>
 
 		<Paragraph>
-		- Jeux Vidéos : quand je trouve un peu de temps, j&apos;aime
-		m&apos;arracher les cheveux qui me restent sur les boss des jeux
-		FromSoftware.
+		- Jeux Vidéos : Quand je trouve un peu de temps, j&apos;aime
+		arracher les cheveux qui me restent aprés avoir perdu contre un boss
+	  des jeux FromSoftware.
 		</Paragraph>
 
 		<Paragraph>
