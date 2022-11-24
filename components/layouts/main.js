@@ -15,27 +15,26 @@ import { Box, Container } from '@chakra-ui/react';
 import VoxelOwl from '../voxel-owl';
 
 const Main = ({ children, router }) => {
-	return (
-		<Box as="main" pb={8}>
-		{/* main box avec padding-bottom */}
-		<Head>
-		{/* viewport basique tenant compte des écrans smartphone */}
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Adnene Guessoum - Accueil</title>
-		</Head>
+  return (
+    <Box as="main" pb={8}>
+      {/* main box avec padding-bottom */}
+      <Head>
+        {/* viewport basique tenant compte des écrans smartphone */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Adnene Guessoum - Accueil</title>
+      </Head>
 
-		<Navbar path={router.asPath} />
-		{/* width max taille medium (props du composant) + padding-top */}
-		<Container maxW="container.md" pt={14}>
+      <Navbar path={router.asPath} />
+      {/* width max taille medium (props du composant) + padding-top */}
+      <Container maxW="container.md" pt={14}>
+        <NoSsr>
+          <VoxelOwl />
+        </NoSsr>
 
-		<NoSsr>
-		<VoxelOwl />
-		</NoSsr>
-
-		{children}
-		</Container>
-		</Box>
-	);
+        {children}
+      </Container>
+    </Box>
+  );
 };
 
 export default Main;

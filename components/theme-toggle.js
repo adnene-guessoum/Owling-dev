@@ -1,7 +1,7 @@
 // Ajouter un boutton pour passer de mode jour à nuit
 import { IconButton, useColorMode, useColorModeValue } from '@chakra-ui/react';
-import { SunIcon, MoonIcon } from '@chakra-ui/icons';
-import {FaMoon, FaSun } from 'react-icons/fa'
+//import { SunIcon, MoonIcon } from '@chakra-ui/icons';
+import { FaMoon, FaSun } from 'react-icons/fa';
 
 // Animer le bouton
 import { AnimatePresence, motion } from 'framer-motion';
@@ -22,7 +22,7 @@ const ThemeToggleButton = () => {
         <IconButton
           aria-label="Toggle theme"
           colorScheme={useColorModeValue('blue', 'orange')}
-          icon={useColorModeValue(<FaMoon  />, <FaSun />)}
+          icon={useColorModeValue(<FaMoon />, <FaSun />)}
           onClick={toggleColorMode}
         ></IconButton>
       </motion.div>

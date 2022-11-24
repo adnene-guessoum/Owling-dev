@@ -17,11 +17,10 @@ import {
   useColorModeValue
 } from '@chakra-ui/react';
 
-
 // commonly used interface icon provided by chakra-ui
 import { HamburgerIcon } from '@chakra-ui/icons';
 
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub } from 'react-icons/io5';
 
 import ThemeToggleButton from './theme-toggle';
 
@@ -77,84 +76,75 @@ const Navbar = props => {
           mt={{ base: 4, nmd: 0 }}
         >
           <LinkItem href="/projets" path={path}>
-						Portfolio
-					</LinkItem>
+            Portfolio
+          </LinkItem>
 
           <LinkItem href="/publications" path={path}>
             Publications
           </LinkItem>
 
-					<LinkItem href="/tech" path={path}>
+          <LinkItem href="/tech" path={path}>
             Outils
           </LinkItem>
 
-					<LinkItem
-						href="https://github.com/adnene-guessoum/Owling-dev"
-						path={path}
-						display="inline-flex"
-						alignItems="center"
-						style={{gap: 4}}
-						pl={2}
-					>
-					<IoLogoGithub />
-					Source
-					</LinkItem>
-
+          <LinkItem
+            href="https://github.com/adnene-guessoum/Owling-dev"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoLogoGithub />
+            Source
+          </LinkItem>
         </Stack>
 
+        <Box flex={1} align="right">
+          <ThemeToggleButton />
 
-        <Box
-          flex={1}
-          align="right"
-        >
+          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+            <Menu isLazy id="navbar-menu">
+              <MenuButton
+                as={IconButton}
+                icon={<HamburgerIcon />}
+                variant="outline"
+                aria-label="Options"
+              />
 
-        <ThemeToggleButton />
-
-				<Box ml={2}
-				display={{base:'inline-block', md: 'none'}}>
-          <Menu isLazy id="navbar-menu"
-					>
-            <MenuButton
-              as={IconButton}
-              icon={<HamburgerIcon />}
-              variant="outline"
-              aria-label="Options"
-            />
-
-            <MenuList>
-
-              {/*
+              <MenuList>
+                {/*
 		 					hydration issue: 
 							cf. https://github.com/chakra-ui/chakra-ui/issues/2248
 							+ isLazy Menu
 							*/}
 
-							<NextLink href="/" LegacyBehavior passHref>
-                <MenuItem as={Link}>Accueil</MenuItem>
-              </NextLink>
+                <NextLink href="/" LegacyBehavior passHref>
+                  <MenuItem as={Link}>Accueil</MenuItem>
+                </NextLink>
 
+                <NextLink href="/projets" LegacyBehavior passHref>
+                  <MenuItem as={Link}>Portfolio</MenuItem>
+                </NextLink>
 
-              <NextLink href="/projets" LegacyBehavior passHref>
-                <MenuItem as={Link}>Portfolio</MenuItem>
-              </NextLink>
+                <NextLink href="/publications" LegacyBehavior passHref>
+                  <MenuItem as={Link}>Publications</MenuItem>
+                </NextLink>
 
-              <NextLink href="/publications" LegacyBehavior passHref>
-                <MenuItem as={Link}>Publications</MenuItem>
-              </NextLink>
+                <NextLink href="/tech" LegacyBehavior passHref>
+                  <MenuItem as={Link}>Outils</MenuItem>
+                </NextLink>
 
-							<NextLink href="/tech" LegacyBehavior passHref>
-                <MenuItem as={Link}>Outils</MenuItem>
-              </NextLink>
-
-              <MenuItem
-                as={Link}
-                href="https://github.com/adnene-guessoum/Owling-dev"
-              >Code Source</MenuItem>
-
-            </MenuList>
-          </Menu>
+                <MenuItem
+                  as={Link}
+                  href="https://github.com/adnene-guessoum/Owling-dev"
+                >
+                  Code Source
+                </MenuItem>
+              </MenuList>
+            </Menu>
+          </Box>
         </Box>
-		</Box>
       </Container>
     </Box>
   );
