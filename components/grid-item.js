@@ -23,19 +23,19 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 );
 
-export const TechStackGridItem = ({title, thumbnail}) => (
-	<Box w="55%" align="center">
-        <Image
-          src={thumbnail}
-          alt={title}
-          className="grid-item-thumbnail"
-          placeholder="blur"
-        />
-          <Text mt={2} fontSize={13}>
-            {title}
-          </Text>
+export const TechStackGridItem = ({ title, thumbnail }) => (
+  <Box w="55%" align="center">
+    <Image
+      src={thumbnail}
+      alt={title}
+      className="grid-item-thumbnail"
+      placeholder="blur"
+    />
+    <Text mt={2} fontSize={13}>
+      {title}
+    </Text>
   </Box>
-)
+);
 
 export const ProjetGridItem = ({ children, id, title, thumbnail }) => (
   <Box w="100%" align="center">
