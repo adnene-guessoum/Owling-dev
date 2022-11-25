@@ -10,7 +10,7 @@ const Publications = () => (
   <Layout title="publications">
     <Container>
       <Heading as="h3" fontSize={20} mb={3}>
-        Publications populaires
+        Publications populaires (En construction)
       </Heading>
 
       <Section delay={0.1}>
