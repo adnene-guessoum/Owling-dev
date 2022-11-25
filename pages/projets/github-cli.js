@@ -38,6 +38,7 @@ const Projet = () => {
             <Meta>Github </Meta>
             <Link href="https://github.com/adnene-guessoum/Github_cli">
               Code Source (Licence MIT)
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
 
