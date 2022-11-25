@@ -23,9 +23,7 @@ const Projets = () => {
               thumbnail={thumbStar}
             >
               Interface pour ligne de commande (Typer, Python) intéragissant
-              avec Github. Disponible sur pypi (CI/CD github actions). Modifier
-              sa description (Github API) et/ou son statut utilisateur
-              (GraphQl).
+              avec Github.{' '}
             </ProjetGridItem>
           </Section>
 

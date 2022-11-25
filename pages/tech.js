@@ -111,7 +111,7 @@ const Tech = () => (
 
       <Paragraph>
         Icons by{' '}
-        <a target="_blank" rel='noreferrer' href="https://icons8.com">
+        <a target="_blank" rel="noreferrer" href="https://icons8.com">
           Icons8
         </a>
       </Paragraph>
@@ -233,9 +233,9 @@ const Tech = () => (
         >
           <TechStackGridItem title="Python" thumbnail={pythonImg} />
 
-          <TechStackGridItem title="Pandas" thumbnail={pandasImg} />
-
           <TechStackGridItem title="SQL" thumbnail={sqlImg} />
+
+          <TechStackGridItem title="Pandas" thumbnail={pandasImg} />
 
           <TechStackGridItem title="Numpy" thumbnail={numpyImg} />
 
