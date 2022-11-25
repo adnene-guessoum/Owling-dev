@@ -6,6 +6,7 @@ import { ProjetGridItem } from '../components/grid-item';
 
 import thumbStar from '../public/images/projets/thumbnail_gh_cli.png';
 import thumbDash from '../public/images/projets/thumbnail_dash.png';
+import thumbAws from '../public/images/projets/thumbnail_aws.png';
 
 const Projets = () => {
   return (
@@ -34,7 +35,17 @@ const Projets = () => {
               thumbnail={thumbDash}
             >
               Dashboard prédiction risque de défaut sur crédit (modèle XGboost).
-              Dashboard déployé sur Streamlit share, API Flask sur Heroku.{' '}
+            </ProjetGridItem>
+          </Section>
+
+          <Section>
+            <ProjetGridItem
+              id="aws-pyspark"
+              title="Extraction features"
+              thumbnail={thumbAws}
+            >
+              Extraire des features d&apos;images de fruits depuis AWS
+              (stockage: S3, cluster: EMR, scripts: Pyspark, modèle: ResNet50).
             </ProjetGridItem>
           </Section>
         </SimpleGrid>
