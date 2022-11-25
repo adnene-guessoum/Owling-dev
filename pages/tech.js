@@ -79,7 +79,7 @@ const Tech = () => (
         css={{ backdropFilter: 'blur(10px)' }}
       >
         <span>
-          Je sépare donc ici chacune des technologies/outils présentés en deux
+          Je sépare donc ici chacun des outils/technologies présentés en deux
           catégories:
         </span>
 

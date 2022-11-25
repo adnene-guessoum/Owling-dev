@@ -38,8 +38,7 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          Bienvenue sur Owling dev! Je suis Adnene, développeur Python et
-          javascript.
+          Bienvenue sur Owling dev ! Je suis Adnene, Dev Python et Javascript.
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -47,8 +46,8 @@ const Page = () => {
               Adnene Guessoum
             </Heading>
             <p>
-              Owling dev ( Développeur / Data Scientist / Lecteur passionée et
-              joueur assidue )
+              ( Développeur / Data Scientist / Lecteur passionné et joueur
+              assidu )
             </p>
           </Box>
 
@@ -80,7 +79,7 @@ const Page = () => {
             ayant découvert les joies du code lors de ma formation en data
             science. Je me lance donc désormais dans toutes sortes de projets
             impliquant de construire des produits et des services digitaux
-            (applications web, sites internets, tableau de bords pour analyse de
+            (applications web, sites internet, tableau de bord pour analyse de
             données, et autres joyeuseries). Sur ce site, Je compte montrer un
             peu ce que je sais faire et ce sur quoi je travaille selon mes
             envies du moment.
@@ -102,10 +101,10 @@ const Page = () => {
             Je suis surtout habitué à Python et Javascript. Mon but est
             systématiquement de progresser en conduisant les projets de
             bout-en-bout jusqu&apos;au déploiement et en respectant les
-            meilleurs pratiques de dévelopement dont j&apos;ai connaissance.
+            meilleurs pratiques de développement dont j&apos;ai connaissance.
             Chaque projet est ainsi l&apos;occasion pour moi d&apos;intégrer une
             technologie nouvelle ou un outils nouveau à mon workflow. Prochain
-            en lice: Développer un blog Django en utilisant Docker.
+            en lice: Développer un blog Django (possiblement avec Docker).
           </Paragraph>
 
           <Box align="center" my={3}>
@@ -119,10 +118,10 @@ const Page = () => {
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            Contacts et Réseaux sociaux
+            Contacts et réseaux sociaux
           </Heading>
           <Paragraph>
-            Vous cherchez à embaucher un dévelopeur junior ou un data scientist
+            Vous cherchez à embaucher un développeur junior ou un data scientist
             ? Vous recherchez un freelance pour des missions spécifiques ?
             Parlons-en ! N&apos;hésitez pas à me contacter :
           </Paragraph>
@@ -182,7 +181,7 @@ const Page = () => {
 
         <Section delay={0.4}>
           <Heading as="h3" variant="section-title">
-            Mes Centres d&apos;intérêts
+            Mes centres d&apos;intérêt
           </Heading>
           <Paragraph mb={18}>
             - Lire, Ecrire et Compter : Philosophie, Sciences humaines et
@@ -194,13 +193,16 @@ const Page = () => {
 
           <Paragraph>
             - Jeux Vidéos : Quand je trouve un peu de temps, j&apos;aime
-            arracher les cheveux qui me restent aprés avoir perdu contre un boss
+            arracher les cheveux qui me restent après avoir perdu contre un boss
             des jeux FromSoftware.
           </Paragraph>
 
           <Paragraph>
-            - Eternel étudiants de langues étrangères et de guitare : Je ne suis
-            pas du tout doué mais l&apos;espoir fait vivre :).
+            - Le reste du temps qui n&apos;est pas consacré à ma famille, coder,
+            lire ou jouer, je reprends mes voeux de nouvel an d&apos;apprendre
+            la guitare, une autre langue étrangère et de me mettre au sport...
+            Jusqu&apos;au prochain abandon inévitable... Mais, l&apos;espoir
+            fait vivre, n&apos;est-ce pas ? :)
           </Paragraph>
         </Section>
 
@@ -224,6 +226,12 @@ const Page = () => {
           <BioSection>
             <BioYear>2015</BioYear>
             Licence Economie - Université Paris I Panthéon Sorbonne
+          </BioSection>
+
+          <BioSection>
+            <BioYear>2013</BioYear>
+            Licence Sociologie - Université de Bourgogne (CPGE Lycée Carnot
+            Dijon)
           </BioSection>
 
           <BioSection>
