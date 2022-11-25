@@ -87,7 +87,7 @@ const Projets = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <ProjetGridItem
-              id="leet-tdd"
+              id="leetcode"
               title="Leetcoding with TDD"
               thumbnail={thumbLeet}
             >
