@@ -1,6 +1,10 @@
 #environment
 .env
 
+#temporary
+temp*.*
+
+
 # Logs
 logs
 *.log
