@@ -17,7 +17,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons';
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
-//import { BioSection, BioYear } from '../components/bio';
+import { BioSection, BioYear } from '../components/bio';
 
 //import { GridItem } from '../components/grid-item';
 import {
@@ -94,6 +94,32 @@ const Page = () => {
         </Section>
 
         <Section delay={0.2}>
+          <Heading as="h3" variant="section-title">
+            Projet en cours:
+          </Heading>
+          <Paragraph>
+            Construire un Blog avec Python/Django pour le backend; JS/React pour
+            le front; Base de donnée Postgresql; Développement avec Docker et
+            déploiement CI/CD sur AWS (RDBS,...).
+          </Paragraph>
+
+          <Box align="center" my={3}>
+            <Link
+              href="https://github.com/adnene-guessoum/blog"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoGithub} />}
+              >
+                Suivre ce projet sur Github
+              </Button>
+            </Link>
+          </Box>
+        </Section>
+
+        <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
             Technologies de prédilection:
           </Heading>
@@ -204,6 +230,47 @@ const Page = () => {
             Jusqu&apos;au prochain abandon inévitable... Mais, l&apos;espoir
             fait vivre, n&apos;est-ce pas ? :)
           </Paragraph>
+        </Section>
+
+        <Section delay={0.5}>
+          <Heading as="h3" variant="section-title">
+            Formation
+          </Heading>
+
+          <BioSection>
+            <BioYear>2022</BioYear>
+            Titre RNCP-7 Data Science - Formation Centrale Supélec /
+            Openclassrooms
+          </BioSection>
+
+          <BioSection>
+            <BioYear>2019</BioYear>
+            Maitrise Econométrie et Statistiques - Université Paris I
+            Panthéon-Sorbonne
+          </BioSection>
+
+          <BioSection>
+            <BioYear>2015</BioYear>
+            Licence Economie - Université Paris I Panthéon Sorbonne
+          </BioSection>
+
+          <BioSection>
+            <BioYear>2013</BioYear>
+            Licence Sociologie - Université de Bourgogne (CPGE Lycée Carnot
+            Dijon)
+          </BioSection>
+
+          <BioSection>
+            <BioYear>2013</BioYear>
+            Reçu au concours d&apos;entrée à l&apos;Ecole Normale Supérieur de
+            Cachan (désormais ENS Paris-Saclay), section Lettres et Sciences
+            sociales.
+          </BioSection>
+
+          <BioSection>
+            <BioYear>1993</BioYear>
+            Né à Noisy-le-Sec (93, France)
+          </BioSection>
         </Section>
       </Container>
     </Layout>

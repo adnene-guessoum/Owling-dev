@@ -1,5 +1,7 @@
 import NextLink from 'next/link';
 
+import { IoLogoGithub } from 'react-icons/io5';
+
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
@@ -40,6 +42,8 @@ import tfImg from '../public/images/tech/tensorflow.png';
 import djangoImg from '../public/images/tech/django.png';
 import pysparkImg from '../public/images/tech/pyspark.png';
 import sqlImg from '../public/images/tech/sql.png';
+import dockerImg from '../public/images/tech/docker.png';
+import psqlImg from '../public/images/tech/psql.png';
 
 import {
   Container,
@@ -49,6 +53,8 @@ import {
   SimpleGrid,
   List,
   ListItem,
+  Link,
+  Icon,
   useColorModeValue
 } from '@chakra-ui/react';
 
@@ -115,6 +121,63 @@ const Tech = () => (
           Icons8
         </a>
       </Paragraph>
+
+      <Section delay={0.1}>
+        <Heading as="h3" fontSize={20} mb={4} variant="section-title">
+          Projet en cours (Blog) :
+        </Heading>
+
+        <Box align="center" mb={3}>
+          <Link href="https://github.com/adnene-guessoum/blog" target="_blank">
+            <Button
+              variant="ghost"
+              colorScheme="teal"
+              leftIcon={<Icon as={IoLogoGithub} />}
+            >
+              Suivre ce projet sur Github
+            </Button>
+          </Link>
+        </Box>
+
+        <SimpleGrid
+          columns={[1, 1, 4]}
+          spacing={4}
+          bg="#03fcc64D"
+          borderRadius="lg"
+          alignItem="center"
+          p={2}
+          pl={10}
+          mb={3}
+        >
+          <TechStackGridItem title="Github actions" thumbnail={githubImg} />
+
+          <TechStackGridItem title="Python" thumbnail={pythonImg} />
+
+          <TechStackGridItem title="JS" thumbnail={jsImg} />
+
+          <TechStackGridItem title="Poetry" thumbnail={poetryImg} />
+
+          <TechStackGridItem title="npm" thumbnail={npmImg} />
+
+          <TechStackGridItem title="Task" thumbnail={taskImg} />
+        </SimpleGrid>
+
+        <SimpleGrid
+          columns={[1, 1, 4]}
+          spacing={4}
+          bg="#b434eb4D"
+          borderRadius="lg"
+          alignItem="center"
+          p={2}
+          pl={10}
+        >
+          <TechStackGridItem title="Django" thumbnail={djangoImg} />
+          <TechStackGridItem title="React" thumbnail={reactImg} />
+          <TechStackGridItem title="Psql" thumbnail={psqlImg} />
+          <TechStackGridItem title="Docker" thumbnail={dockerImg} />
+          <TechStackGridItem title="AWS" thumbnail={awsImg} />
+        </SimpleGrid>
+      </Section>
 
       <Section delay={0.1}>
         <Heading as="h3" fontSize={20} mb={4} variant="section-title">
@@ -239,11 +302,11 @@ const Tech = () => (
 
           <TechStackGridItem title="Numpy" thumbnail={numpyImg} />
 
-          <TechStackGridItem title="Matplotlib" thumbnail={pltImg} />
+          <TechStackGridItem title="plt" thumbnail={pltImg} />
 
-          <TechStackGridItem title="Scikit-Learn" thumbnail={sklearnImg} />
+          <TechStackGridItem title="scikit-learn" thumbnail={sklearnImg} />
 
-          <TechStackGridItem title="Tensorflow" thumbnail={tfImg} />
+          <TechStackGridItem title="Tf" thumbnail={tfImg} />
         </SimpleGrid>
 
         <SimpleGrid
