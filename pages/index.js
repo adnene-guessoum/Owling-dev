@@ -245,26 +245,37 @@ const Page = () => {
 
           <BioSection>
             <BioYear>2019</BioYear>
-            Maitrise Econométrie et Statistiques - Université Paris I
+            Maitrise (M1) Econométrie et Statistiques - Université Paris I
             Panthéon-Sorbonne
           </BioSection>
 
           <BioSection>
             <BioYear>2015</BioYear>
-            Licence Economie - Université Paris I Panthéon Sorbonne
+            Licence Economie et Gestion mention Economie - Université Paris I
+            Panthéon Sorbonne
           </BioSection>
 
           <BioSection>
             <BioYear>2013</BioYear>
-            Licence Sociologie - Université de Bourgogne (CPGE Lycée Carnot
-            Dijon)
+            Licence Sciences humaines et Sociales mention Sociologie -
+            Université de Bourgogne
           </BioSection>
 
           <BioSection>
             <BioYear>2013</BioYear>
-            Reçu au concours d&apos;entrée à l&apos;Ecole Normale Supérieur de
-            Cachan (désormais ENS Paris-Saclay), section Lettres et Sciences
-            sociales.
+            Eleve Normalien - Reçu au concours d&apos;entrée à l&apos;Ecole
+            Normale Supérieur de Cachan (désormais ENS Paris-Saclay), section
+            Lettres et Sciences sociales.
+          </BioSection>
+
+          <BioSection>
+            <BioYear>2010</BioYear>
+            CPGE Lettres et Sciences Sociales - Lycée Carnot, Dijon
+          </BioSection>
+
+          <BioSection>
+            <BioYear>2010</BioYear>
+            Bac S, Lycée Edouard Herriot, Sainte Savine
           </BioSection>
 
           <BioSection>
